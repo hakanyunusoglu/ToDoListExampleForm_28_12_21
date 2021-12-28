@@ -49,12 +49,17 @@ namespace ToDoListExampleForm_28_12_21
                             item.Enabled = true;
                         }
                     }
+                    MessageBox.Show($"Merhaba {kontrolkullanici.KullaniciAdi}.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Hatalı Kullanıcı Adı veya Şifre","HATA", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }
             else
-            {
-                //MessageBox.Show("Hatalı Kullanıcı Adı veya Şifre","HATA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            {                
                 MessageBox.Show("Lütfen Giriş Bilgilerinizi Eksiksiz Giriniz!", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
             
             }

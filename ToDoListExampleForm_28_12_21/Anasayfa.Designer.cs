@@ -30,17 +30,17 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panelsol = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gbislemlistesi = new System.Windows.Forms.GroupBox();
-            this.btnyenikayit = new System.Windows.Forms.Button();
-            this.btnkayitlist = new System.Windows.Forms.Button();
             this.btnkapat = new System.Windows.Forms.Button();
+            this.btnkayitlist = new System.Windows.Forms.Button();
+            this.btnyenikayit = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblsaat = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelsol.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gbislemlistesi.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,16 +54,6 @@
             this.panelsol.Size = new System.Drawing.Size(200, 450);
             this.panelsol.TabIndex = 1;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ToDoListExampleForm_28_12_21.Properties.Resources.list_icon;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 25);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 174);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
             // gbislemlistesi
             // 
             this.gbislemlistesi.Controls.Add(this.btnkapat);
@@ -76,14 +66,15 @@
             this.gbislemlistesi.TabStop = false;
             this.gbislemlistesi.Text = "İşlem Listesi";
             // 
-            // btnyenikayit
+            // btnkapat
             // 
-            this.btnyenikayit.Location = new System.Drawing.Point(6, 32);
-            this.btnyenikayit.Name = "btnyenikayit";
-            this.btnyenikayit.Size = new System.Drawing.Size(166, 23);
-            this.btnyenikayit.TabIndex = 0;
-            this.btnyenikayit.Text = "Yeni Kayıt";
-            this.btnyenikayit.UseVisualStyleBackColor = true;
+            this.btnkapat.Location = new System.Drawing.Point(6, 90);
+            this.btnkapat.Name = "btnkapat";
+            this.btnkapat.Size = new System.Drawing.Size(166, 23);
+            this.btnkapat.TabIndex = 0;
+            this.btnkapat.Text = "Uygulama Kapat";
+            this.btnkapat.UseVisualStyleBackColor = true;
+            this.btnkapat.Click += new System.EventHandler(this.btnkapat_Click);
             // 
             // btnkayitlist
             // 
@@ -94,14 +85,24 @@
             this.btnkayitlist.Text = "Kayıt Liste";
             this.btnkayitlist.UseVisualStyleBackColor = true;
             // 
-            // btnkapat
+            // btnyenikayit
             // 
-            this.btnkapat.Location = new System.Drawing.Point(6, 90);
-            this.btnkapat.Name = "btnkapat";
-            this.btnkapat.Size = new System.Drawing.Size(166, 23);
-            this.btnkapat.TabIndex = 0;
-            this.btnkapat.Text = "Uygulama Kapat";
-            this.btnkapat.UseVisualStyleBackColor = true;
+            this.btnyenikayit.Location = new System.Drawing.Point(6, 32);
+            this.btnyenikayit.Name = "btnyenikayit";
+            this.btnyenikayit.Size = new System.Drawing.Size(166, 23);
+            this.btnyenikayit.TabIndex = 0;
+            this.btnyenikayit.Text = "Yeni Kayıt";
+            this.btnyenikayit.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ToDoListExampleForm_28_12_21.Properties.Resources.list_icon;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 25);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 174);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // panel1
             // 
@@ -134,8 +135,8 @@
             this.Text = "To-Do-Uygulaması";
             this.Load += new System.EventHandler(this.Anasayfa_Load);
             this.panelsol.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gbislemlistesi.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

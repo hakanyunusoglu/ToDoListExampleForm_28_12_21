@@ -37,5 +37,10 @@ namespace ToDoListExampleForm_28_12_21
         {
             lblsaat.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
         }
+
+        private void btnkapat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
