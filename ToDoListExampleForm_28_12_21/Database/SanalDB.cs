@@ -18,14 +18,14 @@ namespace ToDoListExampleForm_28_12_21.Database
             kullaniciTablo.Add(new Kullanici()
             {
                 ID = Guid.NewGuid(),
-                KullaniciAdi = "Hakan",
-                Sifre = "yunus"
+                KullaniciAdi = "hakan",
+                Sifre = "123"
             });
             todoTablo = new List<Todo>();
-            todoTablo.Add(new Todo()
-            {
+            //todoTablo.Add(new Todo()
+            //{
 
-            });
+            //});
         }
     }
 }

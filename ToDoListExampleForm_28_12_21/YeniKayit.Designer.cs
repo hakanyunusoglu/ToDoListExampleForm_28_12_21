@@ -64,7 +64,9 @@
             this.txtBaslik.Location = new System.Drawing.Point(101, 6);
             this.txtBaslik.Name = "txtBaslik";
             this.txtBaslik.Size = new System.Drawing.Size(171, 23);
-            this.txtBaslik.TabIndex = 1;
+            this.txtBaslik.TabIndex = 0;
+            this.txtBaslik.Enter += new System.EventHandler(this.txtBaslik_Enter);
+            this.txtBaslik.Leave += new System.EventHandler(this.txtBaslik_Leave);
             // 
             // txtKisaAciklama
             // 
@@ -73,6 +75,8 @@
             this.txtKisaAciklama.Name = "txtKisaAciklama";
             this.txtKisaAciklama.Size = new System.Drawing.Size(171, 73);
             this.txtKisaAciklama.TabIndex = 1;
+            this.txtKisaAciklama.Enter += new System.EventHandler(this.txtBaslik_Enter);
+            this.txtKisaAciklama.Leave += new System.EventHandler(this.txtBaslik_Leave);
             // 
             // label3
             // 
@@ -89,7 +93,9 @@
             this.txtAciklama.Multiline = true;
             this.txtAciklama.Name = "txtAciklama";
             this.txtAciklama.Size = new System.Drawing.Size(171, 135);
-            this.txtAciklama.TabIndex = 1;
+            this.txtAciklama.TabIndex = 2;
+            this.txtAciklama.Enter += new System.EventHandler(this.txtBaslik_Enter);
+            this.txtAciklama.Leave += new System.EventHandler(this.txtBaslik_Leave);
             // 
             // label4
             // 
@@ -105,7 +111,9 @@
             this.txtOnemDerecesi.Location = new System.Drawing.Point(101, 255);
             this.txtOnemDerecesi.Name = "txtOnemDerecesi";
             this.txtOnemDerecesi.Size = new System.Drawing.Size(171, 23);
-            this.txtOnemDerecesi.TabIndex = 1;
+            this.txtOnemDerecesi.TabIndex = 3;
+            this.txtOnemDerecesi.Enter += new System.EventHandler(this.txtBaslik_Enter);
+            this.txtOnemDerecesi.Leave += new System.EventHandler(this.txtBaslik_Leave);
             // 
             // label5
             // 
@@ -128,16 +136,20 @@
             this.cbbDurum.Location = new System.Drawing.Point(101, 284);
             this.cbbDurum.Name = "cbbDurum";
             this.cbbDurum.Size = new System.Drawing.Size(171, 23);
-            this.cbbDurum.TabIndex = 2;
+            this.cbbDurum.TabIndex = 4;
+            this.cbbDurum.Enter += new System.EventHandler(this.cbbDurum_Enter);
+            this.cbbDurum.Leave += new System.EventHandler(this.cbbDurum_Leave);
             // 
             // btnYeniKayit
             // 
             this.btnYeniKayit.Location = new System.Drawing.Point(197, 313);
             this.btnYeniKayit.Name = "btnYeniKayit";
             this.btnYeniKayit.Size = new System.Drawing.Size(75, 23);
-            this.btnYeniKayit.TabIndex = 3;
+            this.btnYeniKayit.TabIndex = 5;
             this.btnYeniKayit.Text = "Kaydet";
             this.btnYeniKayit.UseVisualStyleBackColor = true;
+            this.btnYeniKayit.Click += new System.EventHandler(this.btnYeniKayit_Click);
+            this.btnYeniKayit.KeyUp += new System.Windows.Forms.KeyEventHandler(this.btnYeniKayit_KeyUp);
             // 
             // YeniKayit
             // 

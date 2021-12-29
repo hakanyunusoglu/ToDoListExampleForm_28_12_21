@@ -20,9 +20,19 @@ namespace ToDoListExampleForm_28_12_21.BusinessServices
             return SanalDB.todoTablo;
         }
 
-        //public int KayitYeni(Todo data)
-        //{
+        public int KayitYeni(Todo data)
+        {
+            try
+            {
+                SanalDB.todoTablo.Add(data);
+                return 1;
+            }
+            catch (Exception)
+            {
 
-        //}
+                return 0;
+            }
+
+        }
     }
 }

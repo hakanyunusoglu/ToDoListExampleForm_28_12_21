@@ -84,6 +84,7 @@
             this.btnkayitlist.TabIndex = 0;
             this.btnkayitlist.Text = "Kayıt Liste";
             this.btnkayitlist.UseVisualStyleBackColor = true;
+            this.btnkayitlist.Click += new System.EventHandler(this.btnkayitlist_Click);
             // 
             // btnyenikayit
             // 
@@ -93,6 +94,7 @@
             this.btnyenikayit.TabIndex = 0;
             this.btnyenikayit.Text = "Yeni Kayıt";
             this.btnyenikayit.UseVisualStyleBackColor = true;
+            this.btnyenikayit.Click += new System.EventHandler(this.btnyenikayit_Click);
             // 
             // pictureBox1
             // 
@@ -107,7 +109,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.lblsaat);
-            this.panel1.Location = new System.Drawing.Point(587, 407);
+            this.panel1.Location = new System.Drawing.Point(884, 409);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(211, 41);
             this.panel1.TabIndex = 4;
@@ -126,7 +128,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1096, 450);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelsol);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
