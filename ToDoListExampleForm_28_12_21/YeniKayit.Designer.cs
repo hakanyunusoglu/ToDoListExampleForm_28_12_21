@@ -126,6 +126,7 @@
             // 
             // cbbDurum
             // 
+            this.cbbDurum.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbDurum.FormattingEnabled = true;
             this.cbbDurum.Items.AddRange(new object[] {
             "Beklemede",

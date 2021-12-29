@@ -17,6 +17,8 @@ namespace ToDoListExampleForm_28_12_21
         public YeniKayit()
         {
             InitializeComponent();
+
+            cbbDurum.SelectedIndex = 1;
         }
 
         private void txtBaslik_Enter(object sender, EventArgs e)
@@ -76,8 +78,9 @@ namespace ToDoListExampleForm_28_12_21
                         }
                         if(item is ComboBox)
                         {
-                            ((ComboBox)item).SelectedText = "";
+                            ((ComboBox)item).SelectedIndex = 1;
                         }
+                        txtBaslik.Focus();
 
                     }
 
@@ -95,7 +98,14 @@ namespace ToDoListExampleForm_28_12_21
                     }
                     else
                     {
-                        // groupbox controlleri dönüp verileri listeleme işlemi yapılacak
+                        GroupBox liste = (GroupBox)kayitListesi.Controls["gbListe"];
+                        DataGridView dgvList = (DataGridView)liste.Controls["dgv"];
+                        List<Todo> guncelListe = todoservice.kayitListele();
+                        dgvList.DataSource = null;
+                        
+                        dgvList.DataSource = guncelListe;
+                        dgvList.Columns["ID"].Visible = false;
+                        this.Close();
                     }
                 }
             }

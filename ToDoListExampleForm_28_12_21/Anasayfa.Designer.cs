@@ -71,7 +71,7 @@
             this.btnkapat.Location = new System.Drawing.Point(6, 90);
             this.btnkapat.Name = "btnkapat";
             this.btnkapat.Size = new System.Drawing.Size(166, 23);
-            this.btnkapat.TabIndex = 0;
+            this.btnkapat.TabIndex = 2;
             this.btnkapat.Text = "Uygulama Kapat";
             this.btnkapat.UseVisualStyleBackColor = true;
             this.btnkapat.Click += new System.EventHandler(this.btnkapat_Click);
@@ -81,7 +81,7 @@
             this.btnkayitlist.Location = new System.Drawing.Point(6, 61);
             this.btnkayitlist.Name = "btnkayitlist";
             this.btnkayitlist.Size = new System.Drawing.Size(166, 23);
-            this.btnkayitlist.TabIndex = 0;
+            this.btnkayitlist.TabIndex = 1;
             this.btnkayitlist.Text = "Kayıt Liste";
             this.btnkayitlist.UseVisualStyleBackColor = true;
             this.btnkayitlist.Click += new System.EventHandler(this.btnkayitlist_Click);
